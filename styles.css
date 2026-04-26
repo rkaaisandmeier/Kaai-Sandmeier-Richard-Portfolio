@@ -1,0 +1,14 @@
+/* CSS by Richard Kaai-Sandmeier*/
+/*
+Color Pallete
+    light grey: #A4A4A6
+    dark grey: #1B2619
+    dark green: #162607
+    light green: #595738
+    light brown: #734136
+*/
+
+/* GLOBAL (base) MOBILE FIRST */
+body{
+    background-color: #1B2619;
+}
