@@ -12,8 +12,15 @@ Color Pallete
 body{
     background-color: #1B2619;
     margin: 0;
-    padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+}
+header p{
+    font-size: 1.5rem;
+    color: #A4A4A6;
 }
 
 header {
@@ -21,6 +28,7 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
+    display: flexbox;
 }
 
 nav {
@@ -29,6 +37,7 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 nav ul {
@@ -40,29 +49,87 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem;
-    display: inline-block;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-transform:uppercase;
 }
 nav a:hover {
     background-color: #734136;
 }
 
-.title h2{
-    font-size: 3rem;
-    background-color: #162607;
-    color: white;
+nav button{
+    background-color: #734136;
+    font-size: 1.5rem;
+    text-decoration: none;
     text-align: center;
-    padding: 1rem;
+    color: white;
+    padding:0.5rem;
 }
-.title p{
+
+.Introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Introduction img{
+    height: 35rem;
+    padding: .5rem;
+    font: 3rem;
+    text-align: center;
+}
+
+.Introduction > div{
+    width: 100%;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Introduction p{
     font-size: 1rem;
     background-color: #734136;
     color: white;
     text-align: center;
     padding: 1rem;
 }
-.title {
+
+.Introduction button{
+    background-color: #162607;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem auto 0;
+    display: block;
+}
+
+.Introduction a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    text-transform:uppercase;
+}
+
+
+
+.title, .Introduction h2{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    padding: 1rem;
+}
+.title p{
+    font-size: 1rem;
+    background-color: #595738;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.title{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,6 +155,31 @@ footer{
     color: #A4A4A6;
 }
 
+ul.aboutme{
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: #595738;
+    list-style: numbered;
+}
+
+.button{
+    background-color: #734136;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding:0.5rem;
+    margin: 1rem auto 0;
+    display: block;
+}
+.button a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    text-transform:uppercase;
+}
 
 /* carousel video credit from: https://www.youtube.com/watch?v=KD1Yo8a_Qis or coding2go */
 
@@ -124,6 +216,91 @@ footer{
     from {translate: 0;}
     to{translate: -100%;}
 }
-/*Following this logic add a hover effect for when the mouse is on the image and have it show a small description of the image and when it was taken or what it is
-Try following along for this video: https://www.youtube.com/watch?v=hr4JiDr7Aec
-*/
+
+ul{
+    list-style: none;
+}
+
+.photography-nav li, .video-nav li{
+    padding: 1rem;
+    background-color: #595738;
+    color: white;
+    margin: 0.5rem auto;
+    width: 80%;
+    text-align: center;
+}
+
+.photography-nav a, .video-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    text-transform:uppercase;
+    font-size: 1.5rem;
+}
+
+.photography-nav a:hover, .video-nav a:hover{
+    background-color: #734136;
+    padding: 0.5rem;
+}
+
+.photography-nav, .video-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    height: auto;
+}
+
+.title{
+    margin-top: 2rem;
+}
+
+.photography-image{
+    width: 100%;
+    max-width: 80%;
+    height: auto;
+    padding: .5rem;
+    font: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .photography-nav, .video-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .Introduction{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Introduction h2{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .Introduction img{
+        height: 50rem;
+        padding: .5rem;
+        font: 3rem;
+        text-align: center;
+    }
+    .Introduction > div{
+        width: 100%;
+        max-width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+}
