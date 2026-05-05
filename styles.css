@@ -157,7 +157,7 @@ footer{
 
 ul.aboutme{
     color: white;
-    padding: 2rem;
+    padding: 4rem;
     font-size: 1.5rem;
     background-color: #595738;
     list-style: numbered;
@@ -204,7 +204,7 @@ ul.aboutme{
 }
 
 .group img{
-    flex: 0 0 6em;
+    flex: 0 0 6rem;
     height: 25rem;
     padding: .5rem;
     font: 3rem;
