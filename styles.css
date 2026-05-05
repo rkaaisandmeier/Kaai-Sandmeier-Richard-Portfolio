@@ -27,6 +27,8 @@ nav {
     background-color: #595738;
     padding: 1rem;
     display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 nav ul {
@@ -54,11 +56,16 @@ nav a:hover {
     padding: 1rem;
 }
 .title p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: #734136;
     color: white;
     text-align: center;
     padding: 1rem;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer{
@@ -68,13 +75,28 @@ footer{
     color: white;
 }
 
+.popup{
+    background-color: #1B2619;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+}
+
+.endmessage{
+    font-size: .75rem;
+    color: #A4A4A6;
+}
+
+
 /* carousel video credit from: https://www.youtube.com/watch?v=KD1Yo8a_Qis or coding2go */
 
 .carousel{
-    margin: 100px auto;
+    margin: 10px auto;
     width: 90%;
     display: flex;
     overflow-x: auto;
+    ;
 }
 
 .carousel::-webkit-scrollbar{
@@ -88,23 +110,8 @@ footer{
     animation: spin 10s infinite linear;
     width:auto;
 }
-.group2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: spin 27s infinite linear;
-    width:auto;
-}
 
 .group img{
-    flex: 0 0 6em;
-    height: 25rem;
-    padding: .5rem;
-    font: 3rem;
-    text-align: center;
-    align-content: center;
-}
-.group2 img{
     flex: 0 0 6em;
     height: 25rem;
     padding: .5rem;
